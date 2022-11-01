@@ -30,7 +30,7 @@ function getWeather() {
             document.getElementById("weather-image").innerHTML = `<img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png">`;
             // temperature
             document.getElementById('temp').innerHTML = data.main.temp + "°C";
-            document.getElementById('min-temp').innerHTML = data.main.temp_min + "°C";
+            document.getElementById('min-temp').innerHTML = data.main.temp_min;
             document.getElementById('max-temp').innerHTML = data.main.temp_max + "°C";
             // humidity
             document.getElementById('humidity').innerHTML = data.main.humidity + "%";
