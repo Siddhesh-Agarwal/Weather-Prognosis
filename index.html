@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prognosis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1>Weather Prognosis</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input type="text" name="city" id="city" placeholder="Enter city name" value="Delhi">
+                <button type="submit" id="submit" onclick="getWeather()">Get Weather</button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="weather">
+                <div class="wrapper">
+                    <h1 id="weather"></h1>
+                    <div id="weather-image"></div>
+                </div>
+                <div class="wrapper">
+                    <div class="temp">
+                        <h2 id="temp"></h2>
+                        <h3 id="min-max">
+                            <span id="min-temp"></span> - <span id="max-temp"></span>
+                        </h3>
+                    </div>
+                    <h2 id="humidity"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
